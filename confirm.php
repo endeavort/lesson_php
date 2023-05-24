@@ -1,6 +1,7 @@
 <?php
+// PHP program
 $regist = $_POST;
-// var_dump($regist)
+// var_dump($regist);
 ?>
 
 <!DOCTYPE html>
@@ -17,11 +18,19 @@ $regist = $_POST;
     <form action="" method="post">
         <div>
             <label for="">氏名</label>
-            <?= $regist['name'] ?> 
+            <?= $regist['name'] ?>
         </div>
         <div>
             <label for="">Email</label>
-            <?= $regist['email'] ?> 
+            <?= $regist['email'] ?>
+        </div>
+        <div>
+            <label for="">生年月日</label>
+            <?= $regist['year'] ?>/<?= $regist['month'] ?>/<?= $regist['day'] ?>
+        </div>
+        <div>
+            <label for="">性別</label>
+            <?= $regist['gender'] ?>
         </div>
         <button>登録</button>
     </form>
